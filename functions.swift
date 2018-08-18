@@ -77,6 +77,7 @@ numbers.map({ (number: Int) -> Int in
     let result = 3 * number
     return result
 })
+<<<<<<< HEAD
 
 
 let zeromapodd =  numbers.map({ (number: Int) -> Int in
@@ -91,3 +92,5 @@ print(zeromapodd)
 
 let mappedNumbers = numbers.map({ number in 3 * number })
 print(mappedNumbers)
+=======
+>>>>>>> d550175759eef28bcbf019e3c40e2343591f3b4b
