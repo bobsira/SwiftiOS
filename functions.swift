@@ -1,96 +1,192 @@
-func greet(person: String, day: String) ->String {
-    return "Hello \(person), today is \(day)."
+import Foundation 
+
+func greet(person: String) -> String {
+    let greeting = "Hello, " + person + "!"
+    return greeting 
 }
 
-greet(person: "Bob", day: "Tuesday")
+print(greet(person: "Anna"))
+print(greet(person: "Tiffany"))
+print(greet(person: "Sirasira"))
 
-
-//By default, functions use their parameter names as labels for their arguments. Write a custom argument label before the parameter name, or write _ to use no argument label.
-func greet(_ person: String, on day: String) -> String {
-    return "Hello \(person), today is \(day)."
+func greetAgain(person: String) -> String { 
+    return "Hello again, " + person + "!"
 }
-greet("John", on: "Wednesday")
 
-func calculateStatics(scores: [Int]) -> (min: Int, max: Int, sum: Int){
-    var min = scores[0]
-    var max = scores[0]
-    var sum = 0
+func sayHelloWorld() -> String {
+    return "hello, world"
+}
+print(sayHelloWorld())
+print(greetAgain(person: "Tiff sirasira"))
+print(sayHelloWorld())
 
-    for score in scores{
-        if score > max {
-          max = score
-        } else if score < min {
-          min = score
-        }
-        sum += score
+func greet(person: String, alreadyGreeted: Bool) -> String {
+    if alreadyGreeted {
+        return greetAgain(person: person)
+    } else {
+        return greet(person: person)
     }
+}
+print(greet(person: "Tim", alreadyGreeted: true))
 
-    return(min,max,sum)
+func greet(person: String){
+    print("Hello, \(person)!")
 }
 
-let statics = calculateStatics(scores: [5,3,100,3,9])
-print(statics.sum)
-print(statics.2)
+//greet(person: "Dave")
 
 
-func returnFifteen() -> Int {
-  var y = 10
-  func add(){
-    y += 5
-  }
-  add()
-  return y
-}
-returnFifteen()
-
-
-func makeIncrementer() -> ((Int) ->Int){
-    func addOne(number: Int) -> Int {
-        return 1 + number
-    }
-    return addOne
+func printAndCount(string: String) -> Int {
+    print(string)
+    return string.count
 }
 
-var increment = makeIncrementer()
-increment(7)
+func printWithoutCounting(string: String) {
+    let _ = printAndCount(string: string)
+}
 
+printAndCount(string: "hello, world")
+printWithoutCounting(string: "hello, world")
 
-//a function can take another function as one its arguments
-func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
-    for item in list {
-        if condition(item){
-            return true
+func minMax(array: [Int]) -> (min: Int, max: Int)? {
+    if array.isEmpty { return nil }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count]{
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
         }
     }
-    return false
+    return(currentMin, currentMax)
 }
 
-func lessThanTen(number: Int) -> Bool{
-    return number < 10
+if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]){
+    print("min is \(bounds.min) and max is \(bounds.max)")
 }
 
-var numbers = [20, 19, 7, 12]
-hasAnyMatches(list: numbers, condition: lessThanTen)
+
+func someFunction(firstParameterName: Int, secondParameterName: Int) {
+    // In the function body, firstParameterName and secondParameterName
+    // refer to the argument values for the first and second parameters.
+}
+someFunction(firstParameterName: 1, secondParameterName: 2)
+
+func someFunction(argumentLabel parameterName: Int) {
+    // In the function body, parameterName refers to the argument value
+    // for that parameter.
+}
+
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)! Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino."))
 
 
-numbers.map({ (number: Int) -> Int in
-    let result = 3 * number
-    return result
-})
-<<<<<<< HEAD
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // In the function body, firstParameterName and secondParameterName
+    // refer to the argument values for the first and second parameters.
+}
+someFunction(1,secondParameterName: 2)
 
+func someFunction(parameterWithoutDefault: Int, parameterWithDefault: Int = 12) {
+    //if you omit the second argument when calling this function, then
+    //the value of parameterWithDefault is 12 inside the function body.
+}
+someFunction(parameterWithoutDefault: 3, parameterWithDefault: 6) //parameterWithDefault is 6
+someFunction(parameterWithoutDefault: 4) // parameterWithDefault is 12
 
-let zeromapodd =  numbers.map({ (number: Int) -> Int in
-    if number % 2 != 0 {
-    let result = 0
-    return result
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
     }
-    return number
-})
+    return total / Double(numbers.count)
+}
 
-print(zeromapodd)
+print(arithmeticMean(1,2,3,4,5))
+print(arithmeticMean(3, 8.25, 18.75))
 
-let mappedNumbers = numbers.map({ number in 3 * number })
-print(mappedNumbers)
-=======
->>>>>>> d550175759eef28bcbf019e3c40e2343591f3b4b
+
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b 
+    b = temporaryA
+}
+
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+
+func addTwoInts(_ a: Int, _ b: Int) -> Int {
+    return a + b 
+}
+
+func multiplyTwoInts(_ a: Int, _ b: Int) -> Int {
+    return a * b
+}
+
+
+
+func printHelloWorld(){
+    print("hello, world")
+}
+
+
+// using function types 
+
+var mathFunction: (Int, Int) -> Int = addTwoInts
+print("Result: \(mathFunction(2,3))")
+
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2,3))")
+
+let anotherMathFunction = addTwoInts
+// anotherMathFunction is inferred to be of type (Int, Int) -> Int
+
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int){
+    print("Result: \(mathFunction(a,b))")
+}
+printMathResult(addTwoInts,3,5)
+
+func stepForward(_ input: Int) -> Int {
+    return input + 1
+}
+func stepBackward(_ input: Int) -> Int {
+    return input - 1
+}
+
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    return backward ? stepBackward : stepForward
+}
+
+var currentValue = 3
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+
+print("Counting to zero:")
+while currentValue != 0 {
+    print("\(currentValue)...")
+    currentValue = moveNearerToZero(currentValue)
+}
+
+print("zero")
+
+
+
+//nested functions 
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int { return input + 1 }
+    func stepBackward(input: Int) -> Int { return input - 1 }
+    return backward ? stepBackward : stepForward
+}
+
+var currentValue = -4
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero now refers to the nested stepForward() function
+while currentValue != 0 {
+    print("\(currentValue)...")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero")
