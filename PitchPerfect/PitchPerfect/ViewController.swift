@@ -27,5 +27,10 @@ class ViewController: UIViewController {
         print("record")
         recodingAudio.text = "Recording in progress"
     }
+    
+    
+    @IBAction func stopRecording(_ sender: Any) {
+        print("Button pressed")
+    }
 }
 
