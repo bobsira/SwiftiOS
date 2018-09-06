@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PitchPerfect
+//  MiraclePillApp
 //
-//  Created by bobsirasira on 04/09/2018.
+//  Created by bobsirasira on 06/09/2018.
 //  Copyright © 2018 bobsirasira. All rights reserved.
 //
 
