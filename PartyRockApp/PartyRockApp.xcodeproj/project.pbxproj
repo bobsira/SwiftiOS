@@ -13,6 +13,8 @@
 		D59144E021452A12001AD73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59144DF21452A12001AD73D /* Assets.xcassets */; };
 		D59144E321452A12001AD73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59144E121452A12001AD73D /* LaunchScreen.storyboard */; };
 		D59144EE21453622001AD73D /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59144ED21453622001AD73D /* VideoVC.swift */; };
+		D59144F021453875001AD73D /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59144EF21453875001AD73D /* PartyCell.swift */; };
+		D59144F221453B92001AD73D /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59144F121453B92001AD73D /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D59144E221452A12001AD73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D59144E421452A12001AD73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59144ED21453622001AD73D /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		D59144EF21453875001AD73D /* PartyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		D59144F121453B92001AD73D /* PartyRock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		D59144EB21452AB8001AD73D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D59144F121453B92001AD73D /* PartyRock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		D59144EC21452AC1001AD73D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D59144EF21453875001AD73D /* PartyCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 			files = (
 				D59144EE21453622001AD73D /* VideoVC.swift in Sources */,
 				D59144DB21452A11001AD73D /* MainVC.swift in Sources */,
+				D59144F221453B92001AD73D /* PartyRock.swift in Sources */,
+				D59144F021453875001AD73D /* PartyCell.swift in Sources */,
 				D59144D921452A11001AD73D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -64,7 +64,7 @@
                                 <rect key="frame" x="0.0" y="213" width="375" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="HhS-LV-PIW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="108" id="HhS-LV-PIW" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HhS-LV-PIW" id="E2M-fY-MXA">
@@ -97,6 +97,10 @@
                                                 <constraint firstItem="Rcc-Ed-16l" firstAttribute="leading" secondItem="E2M-fY-MXA" secondAttribute="leadingMargin" id="oM3-Or-oDK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="Rcc-Ed-16l" id="2nz-I4-6fR"/>
+                                            <outlet property="videoTitle" destination="zHi-bw-jAa" id="l1H-ie-fI5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -117,6 +121,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="qZD-mE-5Q6" id="XIj-ub-gHF"/>
                         <segue destination="2QK-mX-RVd" kind="showDetail" identifier="VideoVC" id="sp0-0V-q8v"/>
                     </connections>
                 </viewController>
@@ -143,15 +148,31 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-Wi-adq">
+                                <rect key="frame" x="5" y="280" width="365" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="2di-ju-c2y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="s1O-zP-AbY" firstAttribute="trailing" secondItem="iOU-Wi-adq" secondAttribute="trailing" constant="5" id="CPy-Od-Bk0"/>
                             <constraint firstItem="kPj-wg-S21" firstAttribute="leading" secondItem="s1O-zP-AbY" secondAttribute="leading" id="DKe-yR-m3I"/>
                             <constraint firstItem="kPj-wg-S21" firstAttribute="top" secondItem="fYk-YM-b28" secondAttribute="top" id="ILc-WT-o4u"/>
+                            <constraint firstItem="iOU-Wi-adq" firstAttribute="leading" secondItem="s1O-zP-AbY" secondAttribute="leading" constant="5" id="aGP-j3-67f"/>
                             <constraint firstItem="kPj-wg-S21" firstAttribute="trailing" secondItem="s1O-zP-AbY" secondAttribute="trailing" id="bil-21-uoH"/>
+                            <constraint firstItem="iOU-Wi-adq" firstAttribute="top" secondItem="kPj-wg-S21" secondAttribute="bottom" constant="50" id="zFm-MP-3PZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="s1O-zP-AbY"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="iOU-Wi-adq" id="JTu-HO-onP"/>
+                        <outlet property="webView" destination="kPj-wg-S21" id="hfe-HE-van"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcF-dk-1x3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
