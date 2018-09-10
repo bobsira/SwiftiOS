@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		57608F4A0DB5C9075A6ECC60 /* Pods_rainyshinycloudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448033F8403307AD055FBAAE /* Pods_rainyshinycloudy.framework */; };
 		D57F0F092145B7990066ABB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F082145B7990066ABB9 /* AppDelegate.swift */; };
-		D57F0F0B2145B7990066ABB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F0A2145B7990066ABB9 /* ViewController.swift */; };
+		D57F0F0B2145B7990066ABB9 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F0F0A2145B7990066ABB9 /* WeatherVC.swift */; };
 		D57F0F0E2145B7990066ABB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57F0F0C2145B7990066ABB9 /* Main.storyboard */; };
 		D57F0F102145B79B0066ABB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57F0F0F2145B79B0066ABB9 /* Assets.xcassets */; };
 		D57F0F132145B79B0066ABB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57F0F112145B79B0066ABB9 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		A9A8F35561C2B494275D12B2 /* Pods-rainyshinycloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshinycloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshinycloudy/Pods-rainyshinycloudy.release.xcconfig"; sourceTree = "<group>"; };
 		D57F0F052145B7990066ABB9 /* rainyshinycloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshinycloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57F0F082145B7990066ABB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D57F0F0A2145B7990066ABB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D57F0F0A2145B7990066ABB9 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		D57F0F0D2145B7990066ABB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D57F0F0F2145B79B0066ABB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D57F0F122145B79B0066ABB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D57F0F082145B7990066ABB9 /* AppDelegate.swift */,
-				D57F0F0A2145B7990066ABB9 /* ViewController.swift */,
+				D57F0F0A2145B7990066ABB9 /* WeatherVC.swift */,
 				D57F0F0C2145B7990066ABB9 /* Main.storyboard */,
 				D57F0F0F2145B79B0066ABB9 /* Assets.xcassets */,
 				D57F0F112145B79B0066ABB9 /* LaunchScreen.storyboard */,
@@ -162,15 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-rainyshinycloudy-checkManifestLockResult.txt",
 			);
@@ -184,15 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-rainyshinycloudy/Pods-rainyshinycloudy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -208,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57F0F0B2145B7990066ABB9 /* ViewController.swift in Sources */,
+				D57F0F0B2145B7990066ABB9 /* WeatherVC.swift in Sources */,
 				D57F0F092145B7990066ABB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
