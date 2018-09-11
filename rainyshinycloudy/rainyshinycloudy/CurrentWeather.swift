@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class CurrentWeather {
     var _cityName: String!
@@ -51,9 +52,10 @@ class CurrentWeather {
         //Alamorefire download
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         Alamofire.request(currentWeatherURL).responseJSON { response in
-            let result = response.result
+            //let result = response.result
             print(response)
-            if let dict =  result.value as? Dictionary<String,Any> {
+            //print(result)
+            if let dict =  response.value as? Dictionary<String,Any> {
                 // parse the name which is a string
                 if let name = dict["name"] as? String {
                     self._cityName = name.capitalized
@@ -81,4 +83,20 @@ class CurrentWeather {
         }
         completed()
     }
+    
+//    func downloadWeatherDetailsWithSwify(completed: DownloadComplete){
+//        //Alamorefire download
+//        let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
+//        Alamofire.request(currentWeatherURL).responseJSON { response in
+//            // Getting a string from a JSON Dictionary
+//            let result = response.result
+//            if let dict = result.value as? Dictionary<String,Any>{
+//                if let name = dict["name"].stringValue {
+//                    self._cityName = name
+//                }
+//            }
+//        }
+//        completed()
+//    }
+    
 }
