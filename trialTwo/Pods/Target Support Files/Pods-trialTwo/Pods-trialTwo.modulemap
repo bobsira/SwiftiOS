@@ -1,0 +1,6 @@
+framework module Pods_trialTwo {
+  umbrella header "Pods-trialTwo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CA97552830DD69E90B820CF /* Pods_trialTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE998BC971B7C3FF1A36D40 /* Pods_trialTwo.framework */; };
 		D5072372214C1BE300F18E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5072371214C1BE300F18E16 /* AppDelegate.swift */; };
 		D5072374214C1BE300F18E16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5072373214C1BE300F18E16 /* ViewController.swift */; };
 		D5072377214C1BE300F18E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5072375214C1BE300F18E16 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00FB96F1F55A43FADD876EED /* Pods-trialTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trialTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-trialTwo/Pods-trialTwo.release.xcconfig"; sourceTree = "<group>"; };
+		8DE998BC971B7C3FF1A36D40 /* Pods_trialTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trialTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		925FECE8067F7B33FBB078BB /* Pods-trialTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trialTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trialTwo/Pods-trialTwo.debug.xcconfig"; sourceTree = "<group>"; };
 		D507236E214C1BE300F18E16 /* trialTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trialTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5072371214C1BE300F18E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5072373214C1BE300F18E16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA97552830DD69E90B820CF /* Pods_trialTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AE10EAD6FD7D2BC5B22751D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DE998BC971B7C3FF1A36D40 /* Pods_trialTwo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D358EB3FE3F8D3CF588E0A48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				925FECE8067F7B33FBB078BB /* Pods-trialTwo.debug.xcconfig */,
+				00FB96F1F55A43FADD876EED /* Pods-trialTwo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5072365214C1BE300F18E16 = {
 			isa = PBXGroup;
 			children = (
 				D5072370214C1BE300F18E16 /* trialTwo */,
 				D507236F214C1BE300F18E16 /* Products */,
+				D358EB3FE3F8D3CF588E0A48 /* Pods */,
+				9AE10EAD6FD7D2BC5B22751D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5072380214C1BE400F18E16 /* Build configuration list for PBXNativeTarget "trialTwo" */;
 			buildPhases = (
+				FE39CC4F11C09114EB6A6916 /* [CP] Check Pods Manifest.lock */,
 				D507236A214C1BE300F18E16 /* Sources */,
 				D507236B214C1BE300F18E16 /* Frameworks */,
 				D507236C214C1BE300F18E16 /* Resources */,
+				4135BECCAC596F9A859E246A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4135BECCAC596F9A859E246A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-trialTwo/Pods-trialTwo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-trialTwo/Pods-trialTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE39CC4F11C09114EB6A6916 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-trialTwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D507236A214C1BE300F18E16 /* Sources */ = {
@@ -278,6 +351,7 @@
 		};
 		D5072381214C1BE400F18E16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 925FECE8067F7B33FBB078BB /* Pods-trialTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +369,7 @@
 		};
 		D5072382214C1BE400F18E16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FB96F1F55A43FADD876EED /* Pods-trialTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
