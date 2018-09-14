@@ -19,11 +19,22 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var locationLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var currentWeather = CurrentWeather()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        currentWeather.downloadWeatherDetails {
+            print("I called downloadWeatherDetails")
+            self.updateMainUI()
+        }
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +54,18 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath)
         
         return cell
+    }
+    
+    func updateMainUI(){
+        print("I reached update ui method")
+        dateLabel.text = "\(currentWeather.date)"
+        //dateLabel.text = "Bob Sira Sira"
+        //print("\(dateLabel.text)")
+        currentTempLabel.text = "\(currentWeather.currentTemp)"
+        currentWeatherTypeLabel.text = "\(currentWeather.weatherType)"
+        locationLabel.text = "\(currentWeather.cityName)"
+        currentWeatherImage.image = UIImage(named: "\(currentWeather.weatherType)")
+
     }
 
 
