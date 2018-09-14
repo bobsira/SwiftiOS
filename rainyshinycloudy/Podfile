@@ -7,7 +7,12 @@ use_frameworks!
 target 'rainyshinycloudy' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   pod 'Alamofire', '~> 4.7'
+<<<<<<< HEAD
   pod 'SwiftyJSON', :git =>'https://github.com/SwiftyJSON/SwiftyJSON.git'
+=======
+  pod 'SwiftyJSON', '~> 4.0'
+
+>>>>>>> 789bea51dcbce45ff28b8ce48e772e9e06194e27
   # Pods for rainyshinycloudy
 
 end

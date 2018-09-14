@@ -34,7 +34,10 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidAppear(_ animated: Bool) {
         currentWeather.downloadWeatherDetails {
             // SETUP UI TO LOAD DOWNLOADED DATA
+<<<<<<< HEAD
             print("In the didLoad")
+=======
+>>>>>>> 789bea51dcbce45ff28b8ce48e772e9e06194e27
             self.updateMainUI()
         }
     }
@@ -58,6 +61,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func updateMainUI(){
+<<<<<<< HEAD
         print("In the update ui function")
         dataLabel.text = currentWeather.date
         currentTempLabel.text = "\(currentWeather.currentTemp)"
@@ -70,6 +74,12 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print("I do not have this data")
         }
         
+=======
+        dataLabel.text = currentWeather.date
+        currentTempLabel.text = "\(currentWeather.currentTemp)"
+        currentWeatherTypeLabel.text = currentWeather.weatherType
+        locationLabel.text = currentWeather.cityName
+>>>>>>> 789bea51dcbce45ff28b8ce48e772e9e06194e27
         currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
     }
 
