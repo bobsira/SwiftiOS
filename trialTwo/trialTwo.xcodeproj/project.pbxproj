@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8CA97552830DD69E90B820CF /* Pods_trialTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE998BC971B7C3FF1A36D40 /* Pods_trialTwo.framework */; };
 		D5072372214C1BE300F18E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5072371214C1BE300F18E16 /* AppDelegate.swift */; };
-		D5072374214C1BE300F18E16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5072373214C1BE300F18E16 /* ViewController.swift */; };
+		D5072374214C1BE300F18E16 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5072373214C1BE300F18E16 /* WeatherVC.swift */; };
 		D5072377214C1BE300F18E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5072375214C1BE300F18E16 /* Main.storyboard */; };
 		D5072379214C1BE400F18E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5072378214C1BE400F18E16 /* Assets.xcassets */; };
 		D507237C214C1BE400F18E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D507237A214C1BE400F18E16 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		925FECE8067F7B33FBB078BB /* Pods-trialTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trialTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trialTwo/Pods-trialTwo.debug.xcconfig"; sourceTree = "<group>"; };
 		D507236E214C1BE300F18E16 /* trialTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trialTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5072371214C1BE300F18E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5072373214C1BE300F18E16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5072373214C1BE300F18E16 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		D5072376214C1BE300F18E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5072378214C1BE400F18E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D507237B214C1BE400F18E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D5072371214C1BE300F18E16 /* AppDelegate.swift */,
-				D5072373214C1BE300F18E16 /* ViewController.swift */,
+				D5072373214C1BE300F18E16 /* WeatherVC.swift */,
 				D5072375214C1BE300F18E16 /* Main.storyboard */,
 				D5072378214C1BE400F18E16 /* Assets.xcassets */,
 				D507237A214C1BE400F18E16 /* LaunchScreen.storyboard */,
@@ -162,15 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-trialTwo/Pods-trialTwo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -184,15 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-trialTwo-checkManifestLockResult.txt",
 			);
@@ -208,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5072374214C1BE300F18E16 /* ViewController.swift in Sources */,
+				D5072374214C1BE300F18E16 /* WeatherVC.swift in Sources */,
 				D5072372214C1BE300F18E16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
