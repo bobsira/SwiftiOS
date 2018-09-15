@@ -19,7 +19,7 @@ class CurrentWeather {
         if _cityName == nil {
             _cityName = ""
         }
-        return "\(_cityName)"
+        return _cityName
     }
     
     var date: String {
@@ -31,15 +31,14 @@ class CurrentWeather {
         dateFormatter.timeStyle = .none
         let currentDate = dateFormatter.string(from: Date())
         self._date = "Today, \(currentDate)"
-        //return _date
-        return ("\(_date)!")
+        return _date
     }
     
     var weatherType: String {
         if _weatherType == nil{
             _weatherType = ""
         }
-        return ("\(_weatherType)")
+        return _weatherType
     }
     
     var currentTemp: Double {
@@ -49,14 +48,13 @@ class CurrentWeather {
         return _currentTemp
     }
     
+    /*TODO MOVE ALL THE INITIALIZATION TO THE CLASS INIT() METHOD*/
+    
     func downloadWeatherDetails(completed: DownloadComplete){
-        /**/
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         Alamofire.request(currentWeatherURL).responseJSON { response in
             let result = response.result
             print(result)
-            
-            
             if let dict = result.value as? Dictionary<String,Any>{
                 /*GETTING THE CITY NAME */
                 if let name = dict["name"] as? String {
@@ -83,7 +81,6 @@ class CurrentWeather {
                 }
             }
         }
-        print("I was called and i completed")
         completed()
     }
 }
