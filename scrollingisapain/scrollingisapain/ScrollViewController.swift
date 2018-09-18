@@ -54,6 +54,7 @@ class ScrollViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewWillLayoutSubviews() {
         setZoomScale()
+        setupGestureRecognizer()
     }
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
@@ -64,6 +65,21 @@ class ScrollViewController: UIViewController, UIScrollViewDelegate {
         let horizontalPadding = imageViewSize.width < scrollViewSize.width ? (scrollViewSize.width - imageViewSize.width) / 2 : 0
         
         scrollView.contentInset = UIEdgeInsets(top: verticalPadding, left: horizontalPadding, bottom: verticalPadding, right: horizontalPadding)
+    }
+    
+    func setupGestureRecognizer() {
+        let doubleTap = UITapGestureRecognizer(target: self, action: Selector(("handleDoubleTap:")))
+        doubleTap.numberOfTapsRequired = 2
+        scrollView.addGestureRecognizer(doubleTap)
+    }
+    
+    func handleDoubleTap(recognizer: UITapGestureRecognizer) {
+        
+        if (scrollView.zoomScale > scrollView.minimumZoomScale) {
+            scrollView.setZoomScale(scrollView.minimumZoomScale, animated: true)
+        } else {
+            scrollView.setZoomScale(scrollView.maximumZoomScale, animated: true)
+        }
     }
 
 
