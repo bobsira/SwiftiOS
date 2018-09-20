@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B355376D1652FFB7A8A04FB6 /* Pods_Android_Like_Tab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F72687EF5F07E092C8C45F /* Pods_Android_Like_Tab.framework */; };
+		D59189AE2152A567009C677D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59189AD2152A567009C677D /* AppDelegate.swift */; };
+		D59189B32152A567009C677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59189B12152A567009C677D /* Main.storyboard */; };
+		D59189B52152A56A009C677D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59189B42152A56A009C677D /* Assets.xcassets */; };
+		D59189B82152A56A009C677D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59189B62152A56A009C677D /* LaunchScreen.storyboard */; };
+		D5EAD3382152A9820009F3CA /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EAD3372152A9820009F3CA /* ParentViewController.swift */; };
+		D5EAD33A2152ACE30009F3CA /* ChildViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EAD3392152ACE30009F3CA /* ChildViewController1.swift */; };
+		D5EAD33C2152ACF70009F3CA /* ChildViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EAD33B2152ACF70009F3CA /* ChildViewController2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E45A81915E812CD62C4D687 /* Pods-Android-Like-Tab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Android-Like-Tab.release.xcconfig"; path = "Pods/Target Support Files/Pods-Android-Like-Tab/Pods-Android-Like-Tab.release.xcconfig"; sourceTree = "<group>"; };
+		5A1B4D75967BA50DA5A717A7 /* Pods-Android-Like-Tab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Android-Like-Tab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Android-Like-Tab/Pods-Android-Like-Tab.debug.xcconfig"; sourceTree = "<group>"; };
+		C5F72687EF5F07E092C8C45F /* Pods_Android_Like_Tab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Android_Like_Tab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59189AA2152A567009C677D /* Android-Like-Tab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Android-Like-Tab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59189AD2152A567009C677D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D59189B22152A567009C677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D59189B42152A56A009C677D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D59189B72152A56A009C677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D59189B92152A56A009C677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5EAD3372152A9820009F3CA /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		D5EAD3392152ACE30009F3CA /* ChildViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController1.swift; sourceTree = "<group>"; };
+		D5EAD33B2152ACF70009F3CA /* ChildViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D59189A72152A567009C677D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B355376D1652FFB7A8A04FB6 /* Pods_Android_Like_Tab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		361D25E4ACD4EB159721D961 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A1B4D75967BA50DA5A717A7 /* Pods-Android-Like-Tab.debug.xcconfig */,
+				0E45A81915E812CD62C4D687 /* Pods-Android-Like-Tab.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D59189A12152A567009C677D = {
+			isa = PBXGroup;
+			children = (
+				D59189AC2152A567009C677D /* Android-Like-Tab */,
+				D59189AB2152A567009C677D /* Products */,
+				361D25E4ACD4EB159721D961 /* Pods */,
+				DF6B740F0125438FBEADBE7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D59189AB2152A567009C677D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D59189AA2152A567009C677D /* Android-Like-Tab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D59189AC2152A567009C677D /* Android-Like-Tab */ = {
+			isa = PBXGroup;
+			children = (
+				D59189AD2152A567009C677D /* AppDelegate.swift */,
+				D59189B12152A567009C677D /* Main.storyboard */,
+				D59189B42152A56A009C677D /* Assets.xcassets */,
+				D59189B62152A56A009C677D /* LaunchScreen.storyboard */,
+				D59189B92152A56A009C677D /* Info.plist */,
+				D5EAD3372152A9820009F3CA /* ParentViewController.swift */,
+				D5EAD3392152ACE30009F3CA /* ChildViewController1.swift */,
+				D5EAD33B2152ACF70009F3CA /* ChildViewController2.swift */,
+			);
+			path = "Android-Like-Tab";
+			sourceTree = "<group>";
+		};
+		DF6B740F0125438FBEADBE7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5F72687EF5F07E092C8C45F /* Pods_Android_Like_Tab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D59189A92152A567009C677D /* Android-Like-Tab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D59189BC2152A56A009C677D /* Build configuration list for PBXNativeTarget "Android-Like-Tab" */;
+			buildPhases = (
+				7AAE472EDA27A88CD201B1A2 /* [CP] Check Pods Manifest.lock */,
+				D59189A62152A567009C677D /* Sources */,
+				D59189A72152A567009C677D /* Frameworks */,
+				D59189A82152A567009C677D /* Resources */,
+				9C5417E291E168AD018735BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Android-Like-Tab";
+			productName = "Android-Like-Tab";
+			productReference = D59189AA2152A567009C677D /* Android-Like-Tab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D59189A22152A567009C677D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = bobsirasira;
+				TargetAttributes = {
+					D59189A92152A567009C677D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D59189A52152A567009C677D /* Build configuration list for PBXProject "Android-Like-Tab" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D59189A12152A567009C677D;
+			productRefGroup = D59189AB2152A567009C677D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D59189A92152A567009C677D /* Android-Like-Tab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D59189A82152A567009C677D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59189B82152A56A009C677D /* LaunchScreen.storyboard in Resources */,
+				D59189B52152A56A009C677D /* Assets.xcassets in Resources */,
+				D59189B32152A567009C677D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AAE472EDA27A88CD201B1A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Android-Like-Tab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5417E291E168AD018735BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Android-Like-Tab/Pods-Android-Like-Tab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Android-Like-Tab/Pods-Android-Like-Tab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D59189A62152A567009C677D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5EAD3382152A9820009F3CA /* ParentViewController.swift in Sources */,
+				D5EAD33A2152ACE30009F3CA /* ChildViewController1.swift in Sources */,
+				D5EAD33C2152ACF70009F3CA /* ChildViewController2.swift in Sources */,
+				D59189AE2152A567009C677D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D59189B12152A567009C677D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D59189B22152A567009C677D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D59189B62152A56A009C677D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D59189B72152A56A009C677D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D59189BA2152A56A009C677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D59189BB2152A56A009C677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D59189BD2152A56A009C677D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1B4D75967BA50DA5A717A7 /* Pods-Android-Like-Tab.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Android-Like-Tab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Android-Like-Tab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D59189BE2152A56A009C677D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E45A81915E812CD62C4D687 /* Pods-Android-Like-Tab.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Android-Like-Tab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Android-Like-Tab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D59189A52152A567009C677D /* Build configuration list for PBXProject "Android-Like-Tab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D59189BA2152A56A009C677D /* Debug */,
+				D59189BB2152A56A009C677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D59189BC2152A56A009C677D /* Build configuration list for PBXNativeTarget "Android-Like-Tab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D59189BD2152A56A009C677D /* Debug */,
+				D59189BE2152A56A009C677D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D59189A22152A567009C677D /* Project object */;
+}

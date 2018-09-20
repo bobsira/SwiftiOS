@@ -1,0 +1,6 @@
+framework module Pods_Android_Like_Tab {
+  umbrella header "Pods-Android-Like-Tab-umbrella.h"
+
+  export *
+  module * { export * }
+}
