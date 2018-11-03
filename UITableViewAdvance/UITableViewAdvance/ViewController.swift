@@ -1,16 +1,15 @@
 //
 //  ViewController.swift
-//  ComplexTable
+//  UITableViewAdvance
 //
-//  Created by bobsirasira on 27/10/2018.
+//  Created by bobsirasira on 03/11/2018.
 //  Copyright © 2018 bobsirasira. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
