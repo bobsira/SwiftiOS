@@ -13,6 +13,7 @@
 		D53E8BD2218DF66500FFC5ED /* UITableViewAdvance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D53E8BD0218DF66500FFC5ED /* UITableViewAdvance.xcdatamodeld */; };
 		D53E8BD4218DF66700FFC5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53E8BD3218DF66700FFC5ED /* Assets.xcassets */; };
 		D53E8BD7218DF66700FFC5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53E8BD5218DF66700FFC5ED /* LaunchScreen.storyboard */; };
+		D53E8BDF218EE5A400FFC5ED /* ExpandableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E8BDE218EE5A300FFC5ED /* ExpandableNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D53E8BD3218DF66700FFC5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53E8BD6218DF66700FFC5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53E8BD8218DF66700FFC5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53E8BDE218EE5A300FFC5ED /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				D53E8BC9218DF66500FFC5ED /* AppDelegate.swift */,
 				D53E8BCB218DF66500FFC5ED /* ViewController.swift */,
+				D53E8BDE218EE5A300FFC5ED /* ExpandableNames.swift */,
 				D53E8BCD218DF66500FFC5ED /* Main.storyboard */,
 				D53E8BD3218DF66700FFC5ED /* Assets.xcassets */,
 				D53E8BD5218DF66700FFC5ED /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53E8BDF218EE5A400FFC5ED /* ExpandableNames.swift in Sources */,
 				D53E8BCC218DF66500FFC5ED /* ViewController.swift in Sources */,
 				D53E8BCA218DF66500FFC5ED /* AppDelegate.swift in Sources */,
 				D53E8BD2218DF66500FFC5ED /* UITableViewAdvance.xcdatamodeld in Sources */,
