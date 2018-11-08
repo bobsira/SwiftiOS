@@ -109,7 +109,6 @@
 				B57AD4241FA0C3A600E60FE8 /* Frameworks */,
 				B57AD4251FA0C3A600E60FE8 /* Resources */,
 				12DDE417866C0C2558755A07 /* [CP] Embed Pods Frameworks */,
-				8DA6C4DDE1055FA8BD6E29BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,21 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reachability-playground/Pods-reachability-playground-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8DA6C4DDE1055FA8BD6E29BF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reachability-playground/Pods-reachability-playground-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4FAA43051681CFCD3DF29FB /* [CP] Check Pods Manifest.lock */ = {
@@ -378,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P92RYPH8U;
 				INFOPLIST_FILE = "reachability-playground/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bob.sira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P92RYPH8U;
 				INFOPLIST_FILE = "reachability-playground/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bob.sira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
