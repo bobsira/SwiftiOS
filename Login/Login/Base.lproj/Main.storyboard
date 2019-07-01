@@ -37,18 +37,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="PJb-oT-LKY" kind="show" id="Y45-3R-63W"/>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zR9-46-Glk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FY1-3Y-6L0">
                                 <rect key="frame" x="16" y="465" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot User Name?"/>
+                                <connections>
+                                    <action selector="forgotUserName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDN-kI-i8k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPE-2O-qRg">
                                 <rect key="frame" x="230" y="465" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Edq-82-bYt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,12 +62,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" largeTitleDisplayMode="always" id="CFX-O6-9Gd"/>
                     <connections>
+                        <outlet property="forgotPassword" destination="gPE-2O-qRg" id="eoh-MG-ba6"/>
+                        <outlet property="forgotUserName" destination="FY1-3Y-6L0" id="fD7-DW-3vp"/>
+                        <outlet property="logIn" destination="H2O-hv-gAf" id="1eo-i6-kxr"/>
                         <outlet property="userName" destination="0u9-KE-reu" id="VD3-Jg-cpE"/>
+                        <segue destination="PJb-oT-LKY" kind="show" identifier="Landing" id="Uw0-te-XDd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="133.74384236453201"/>
+            <point key="canvasLocation" x="830" y="134"/>
         </scene>
         <!--Title-->
         <scene sceneID="KZp-Ow-YoO">
@@ -77,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iX6-CY-gLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818.4000000000001" y="133.74384236453201"/>
+            <point key="canvasLocation" x="1628" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EAW-jQ-fdg">
